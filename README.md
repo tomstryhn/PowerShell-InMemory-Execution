@@ -20,7 +20,7 @@ To get the big picture let's start with the basics:
 
 #### Normal PowerShell script execution
 
-The normal way of creating and running a PowerShell script, is to use some sort of code editor, some uses the PowerShell ISE, Notepad++, personally I use the Microsoft VS Code. Basically you write a snippet of code, and saves the file with the '.ps1' extension, this is the default PowerShell script file extension. For this demonstration you can write the following in your preffered editor:
+The normal way of creating and running a PowerShell script, is to use some sort of code editor, some uses the PowerShell ISE, Notepad++, personally I use the VS Code. Basically you write a snippet of code, and saves the file with the '.ps1' extension, this is the default PowerShell script file extension. For this demonstration you can write the following in your preffered editor:
 
 ```PowerShell
 
