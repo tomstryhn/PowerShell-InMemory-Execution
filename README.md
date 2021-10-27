@@ -1,6 +1,6 @@
 # PowerShell-InMemory-Execution
 
-You might have heard "InMemory Execution", mentioned at some point if you work with IT Security, if not, it doesn't matter, I will try and get you up to date on the term, at least in regards to PowerShell and InMemory Execution of scripts. 
+You might have heard "InMemory Execution", mentioned at some point if you work with CyberSecurity or IT in general, if not, it doesn't matter, I will try and get you up to date on the term, at least in regards to PowerShell and InMemory Execution of scripts. 
 
 
 ## Content
