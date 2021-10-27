@@ -5,7 +5,7 @@ You might have heard "InMemory Execution", mentioned at some point if you work w
 
 ## Content
 
-[Script execution explained](#Script execution explained)
+[Script execution explained](#script-execution-explained)
 
 - [Normal PowerShell script execution](#normal-powershell-script-execution)
 
