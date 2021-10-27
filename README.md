@@ -63,7 +63,7 @@ Now remember to check the remote code you are about to run, you can do this by c
 
 But now it's red. *MAGIC*
 
-What happened? Well on a lowlevel explanation line-by-line, first we created a variable `$remoteURL` and put in the URL for the code we wanted to execute, without saving it onto the disk. Then by using a builtin feature of PowerShell, called Invoke-WebRequest, which simply acts as a browser and contacts the URL, and getting all the information, but all we needed was the content, hence the `(In..RL).Content`, and now to the magic, by using the `Invoke-Expression` we run the code, and returns the result, but doing it from a variable, we skipped the part where we have to save the script onto our harddrive, hence **InMemory Execution**.
+What happened? Well on a lowlevel explanation line-by-line, first we created a variable `$remoteURL` and put in the URL for the code we wanted to execute, without saving it onto the disk. Then by using a builtin feature of PowerShell, called Invoke-WebRequest, which simply acts as a browser and contacts the URL, and getting all the information, but all we needed was the content, hence the `(In..RL).Content`, and now to the magic, by using the `Invoke-Expression` we run the code, and returns the result, by doing it using a variable, we skipped the part where we have to save the script onto our harddrive, hence **InMemory Execution**.
 
 ## Final thoughts
 
