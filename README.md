@@ -5,7 +5,7 @@ You might have heard "InMemory Execution", mentioned at some point if you work w
 
 ## Content
 
-[How do you do InMemory Execution?](#how-do-you-do-inmemory-execution)
+[Script execution explained](#Script execution explained)
 
 - [Normal PowerShell script execution](#normal-powershell-script-execution)
 
@@ -14,7 +14,7 @@ You might have heard "InMemory Execution", mentioned at some point if you work w
 [Final thoughts](#final-thoughts)
 
 
-## How do you do InMemory Execution?
+## Script execution explained
 
 To get the big picture let's start with the basics:
 
