@@ -35,8 +35,9 @@ This is a very basic example, to get the idea of how a normal script execution w
 Basically, what InMemory Execution means, is that the code will only exist in the memory of the session, where it will be executed. But how can you get the script onto the computer without saving it to disk, you might ask? Variables is the quick and easy answer, you get your code loaded into a variable, which only exists in the memory, and then you Invoke the code into your session. Sample time:
 
 ```PowerShell
-$remoteURL  = 'https://raw.githubusercontent.com/tomstryhn/PowerShell-InMemory-Execution/main/codesamples/New-RandomPassword.ps1'       
+$remoteURL = 'https://raw.githubusercontent.com/soundness-dk/New-RandomPassword/main/New-RandomPassword.ps1'       
 $remoteCode = (Invoke-WebRequest -Uri $remoteURL).Content  
 Invoke-Expression -Command $remoteCode
-New-RandomPassword
 ```
+
+By copy and pasting the above code to a new PowerShell session you should see the something like what you generated in the sample from earlier. But now it's green.
