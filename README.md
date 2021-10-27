@@ -32,7 +32,7 @@ Write-Host '####################'
 
 Save the file as 'HelloWorld.ps1'
 
-Now you are able to run this code from a PowerShell session, of course depending on the Execution Policy, whole different talk, but assuming you wrote some code that actually works, and the Execution Policy on your computer lets you run the script, you should be able to run the newly created script by simply opening PowerShell on your computer, and typing the name of the file like this:
+Now you are able to run this code from a PowerShell session, of course depending on the Execution Policy, whole different talk, but assuming you wrote some code that actually works, and the Execution Policy on your computer lets you run the script, you should be able to run the newly created script by simply opening PowerShell on your computer, and navigating to the file location, and typing the name of the file like this:
 
 ```PowerShell
 
