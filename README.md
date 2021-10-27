@@ -35,9 +35,10 @@ This is a very basic example, to get the idea of how a normal script execution w
 Basically, what InMemory Execution means, is that the code will only exist in the memory of the session, where it will be executed. But how can you get the script onto the computer without saving it to disk, you might ask? Variables is the quick and easy answer, you get your code loaded into a variable, which only exists in the memory, and then you Invoke the code into your session. Sample time:
 
 ```PowerShell
-$remoteURL = 'https://raw.githubusercontent.com/soundness-dk/New-RandomPassword/main/New-RandomPassword.ps1'       
+$remoteURL = 'https://raw.githubusercontent.com/tomstryhn/PowerShell-InMemory-Execution/main/codesamples/VeryFriendlyCode.ps1'       
 $remoteCode = (Invoke-WebRequest -Uri $remoteURL).Content  
 Invoke-Expression -Command $remoteCode
 ```
 
-By copy and pasting the above code to a new PowerShell session you should see the something like what you generated in the sample from earlier. But now it's green.
+Now remember to check the remote code you are about to run, you can do this by copying the url in the `$remoteURL`, and opening in a new tab in your browser, to be sure what you are about to execute. When you have validated that it's not something dangerous, you can copy the above code into a new PowerShell session, you should see something like what you generated in the sample from earlier. But now it's green. *MAGIC*
+What happened? Well on a lowlevel explation line-by-line, first we created a variable `$remoteURL` and put in the URL for the code we wanted to execute, without saving it onto the disk. Then by using a builtin feature of PowerShell, called Invoke-WebRequest, which simply acts as a browser and contacts the URL, and getting all the information, but all we needed was the content, hence the `(In..RL).Content`, and now to the magic, by using the `Invoke-Expression` we run the code, and returns the result, but doing it from a variable, we skipped the part where we have to save the script onto our harddrive, hence **InMemory Execution**.
