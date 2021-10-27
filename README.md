@@ -59,7 +59,9 @@ Invoke-Expression -Command $remoteCode
 
 ```
 
-Now remember to check the remote code you are about to run, you can do this by copying the url in the `$remoteURL`, and opening in a new tab in your browser, to be sure what you are about to execute. When you have validated that it's not something dangerous, you can copy the above code into a new PowerShell session, you should see something like what you generated in the sample from earlier. But now it's red. *MAGIC*
+Now remember to check the remote code you are about to run, you can do this by copying the url in the `$remoteURL`, and opening in a new tab in your browser, to be sure what you are about to execute. When you have validated that it's not something dangerous, you can copy the above code into a new PowerShell session, you should see something like what you generated in the sample from earlier.
+
+But now it's red. *MAGIC*
 
 What happened? Well on a lowlevel explanation line-by-line, first we created a variable `$remoteURL` and put in the URL for the code we wanted to execute, without saving it onto the disk. Then by using a builtin feature of PowerShell, called Invoke-WebRequest, which simply acts as a browser and contacts the URL, and getting all the information, but all we needed was the content, hence the `(In..RL).Content`, and now to the magic, by using the `Invoke-Expression` we run the code, and returns the result, but doing it from a variable, we skipped the part where we have to save the script onto our harddrive, hence **InMemory Execution**.
 
