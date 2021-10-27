@@ -5,10 +5,13 @@ You might have heard "InMemory Execution", mentioned at some point if you work w
 
 ## Content
 
-[How do you do InMemory Execution?]
-[Normal PowerShell script execution]
-[InMemory Execution]
-[]
+[How do you do InMemory Execution?](#how-do-you-do-inmemory-execution)
+
+- [Normal PowerShell script execution](#normal-powershell-script-execution)
+
+- [InMemory Execution](#inmemory-execution)
+
+[Final thoughts](#final-thoughts)
 
 
 ## How do you do InMemory Execution?
