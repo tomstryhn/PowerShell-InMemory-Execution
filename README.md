@@ -55,7 +55,7 @@ Sample time:
 ```PowerShell
 
 $remoteURL = 'https://raw.githubusercontent.com/tomstryhn/PowerShell-InMemory-Execution/main/codesamples/VeryFriendlyCode.ps1'       
-$remoteCode = (Invoke-WebRequest -Uri $remoteURL).Content  
+$remoteCode = (Invoke-WebRequest -Uri $remoteURL -UseBasicParsing).Content  
 Invoke-Expression -Command $remoteCode
 
 ```
